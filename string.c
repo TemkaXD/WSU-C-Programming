@@ -9,10 +9,8 @@ int main() {
   int my_count = 0;
   int i;
 
-  /* Task 1: find the length of the text. */
   text_lenght = strlen(text);
 
-  /* Task 2: count the word "my". */
   char *token = strtok(text, " ,.!?;");
   while (token != NULL) {
       if (strcmp(token, "my") == 0 || strcmp(token, "My") == 0 || strcmp(token, "MY") == 0) {
@@ -21,7 +19,6 @@ int main() {
       token = strtok(NULL, " ,.!?;");
   }
 
-  /* Task 3: print the results. */
   printf("Length: %d\n", text_lenght);
   printf("Count: %d\n", my_count);
 
